@@ -1,92 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creative Web Developer Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@800;900&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              'sans': ['Inter', 'sans-serif'],
-              'serif': ['Playfair Display', 'serif'],
-            },
-            colors: {
-              'cream': '#F9F5F0',
-              'dark': '#1A1A1A',
-              'accent': '#FF4D6D',
-              'primary': '#0284c7', // AA compliant blue
-              'brand-yellow': '#FFC700',
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      .marquee-content {
-        animation: marquee 40s linear infinite;
-      }
-      .marquee-content:hover {
-        animation-play-state: paused;
-      }
-      @keyframes marquee {
-        from { transform: translateX(0); }
-        to { transform: translateX(-50%); }
-      }
-      .timeline-item::before {
-        content: '';
-        position: absolute;
-        left: -33px; /* Adjust based on padding and border */
-        top: 8px;
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background-color: #F9F5F0;
-      }
-      .timeline-item:first-child::before {
-        background-color: #0284c7;
-      }
-      .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-      }
-      .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-      @media (prefers-reduced-motion: reduce) {
-        *, ::before, ::after {
-          animation-delay: -1ms !important;
-          animation-duration: 1ms !important;
-          animation-iteration-count: 1 !important;
-          background-attachment: initial !important;
-          scroll-behavior: auto !important;
-          transition-duration: 0s !important;
-          transition-delay: 0s !important;
-        }
-        .marquee-content {
-          animation: none;
-        }
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neelesh Rahul - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-  <body class="bg-cream text-dark font-sans">
-    <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+
+<body>
+
+  <header>
+    <h2 class="logo">Neelesh Rahul <span class="role">Angular Developer</span></h2>
+    <nav>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="image-box">
+      <!-- Replace this after you add image in assets -->
+      <img src="assets/profile.jpg" alt="Profile Image">
+    </div>
+
+    <div class="content">
+      <h1>Hello</h1>
+      <p class="about">
+        I'm a passionate Angular developer with strong experience in building user-friendly and scalable web applications.
+      </p>
+
+      <div class="buttons">
+        <a href="assets/resume.pdf" class="btn yellow" download>Resume</a>
+        <a href="#projects" class="btn red">Projects</a>
+        <a href="#contact" class="btn blue">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <strong>Phone</strong><br>
+      +91 93937 37797
+    </div>
+    <div>
+      <strong>Email</strong><br>
+      mekalaneeleshrahul@gamil.com
+    </div>
+    <div>
+      <strong>Follow Me</strong><br>
+      <a href="https://www.linkedin.com/in/m-neeleshrahul" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
 </body>
 </html>
