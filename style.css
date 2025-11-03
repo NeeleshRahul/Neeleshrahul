@@ -96,3 +96,84 @@ footer {
   border-top: 1px solid #dddddd;
   font-size: 14px;
 }
+.page-container {
+  width: 75%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.download-box {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section {
+  margin: 30px 0;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.item .date {
+  width: 25%;
+  color: #666;
+}
+
+.details h3 {
+  margin: 0;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding-left: 18px;
+}
+
+footer .copyright {
+  margin-top: 15px;
+  font-size: 13px;
+  color: gray;
+}
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.project-info {
+  width: 55%;
+}
+
+.project-info h3 {
+  margin-top: 0;
+}
+
+.project-img img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid #222;
+}
+
+/* Highlight active nav link */
+nav a.active {
+  color: #ff3b30;
+  font-weight: bold;
+}
+
