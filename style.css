@@ -176,4 +176,33 @@ nav a.active {
   color: #ff3b30;
   font-weight: bold;
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
 
