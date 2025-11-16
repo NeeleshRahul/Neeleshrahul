@@ -62,26 +62,6 @@ header a:focus {
   text-decoration: none !important;
 }
 
-/* nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #111;
-  font-size: 15px;
-} */
-
-/* nav a:hover,
-nav a.active {
-  color: #ff3b30;
-  font-weight: bold;
-} */
- /* nav a:hover {
-  color: #ff3b30 !important;
-}
-
-nav a.active {
-  color: #ff3b30 !important;
-  font-weight: bold;
-} */
 
 nav {
   display: flex;
