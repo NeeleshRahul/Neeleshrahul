@@ -1,4 +1,4 @@
-// Fade-in animation when elements enter view
+// Fade-in on scroll
 const fadeElements = document.querySelectorAll(".fade-in");
 
 const observer = new IntersectionObserver((entries) => {
@@ -9,4 +9,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-fadeElements.forEach(element => observer.observe(element));
+fadeElements.forEach(el => observer.observe(el));
