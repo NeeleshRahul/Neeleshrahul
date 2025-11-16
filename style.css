@@ -38,9 +38,12 @@ header {
 
 .role {
   font-size: 13px;
-  font-weight: normal;
   color: gray;
   margin-left: 6px;
+}
+
+.no-underline {
+  text-decoration: none !important;
 }
 
 nav a {
@@ -152,79 +155,20 @@ footer {
   font-size: 14px;
 }
 
+footer div {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4ec7c7;
+}
+
 footer .copyright {
   color: gray;
+  margin-top: 10px;
 }
 
-
-/* ----------------------------------------------------
-   ANIMATIONS
----------------------------------------------------- */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 0.9s ease-out;
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-
-/* ----------------------------------------------------
-   RESPONSIVE
----------------------------------------------------- */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .intro h1 { font-size: 36px; }
-  .intro h2 { font-size: 18px; }
-
-  .profile-photo {
-    width: 200px;
-    height: 200px;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .buttons {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-}
-.intro-dot {
-  width: 12px;
-  height: 12px;
-  background: #e0a300;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  animation: pulse 1.8s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); opacity: 0.9; }
-  50% { transform: scale(1.4); opacity: 0.4; }
-  100% { transform: scale(1); opacity: 0.9; }
-}
 
 /* ----------------------------------------------------
    PROJECTS PAGE
@@ -258,55 +202,32 @@ footer .copyright {
 /* ----------------------------------------------------
    RESUME PAGE
 ---------------------------------------------------- */
-.section {
-  margin-bottom: 40px;
+.resume-page {
+  width: 75%;
+  margin: auto;
+  padding: 40px 0;
 }
 
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-.item .date {
-  width: 25%;
-  color: #666;
-}
-
-.details h3 {
-  margin-bottom: 5px;
-}
-
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-/* Remove underline from header name */
-.no-underline {
-  text-decoration: none !important;
-}
-
-/* Resume Header */
 .resume-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .download-btn {
   padding: 12px 25px;
-  font-size: 16px;
+  border-radius: 50px;
 }
 
-/* Divider line */
+.section {
+  margin-top: 35px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
 .divider {
   width: 100%;
   height: 1px;
@@ -314,11 +235,9 @@ footer .copyright {
   margin: 25px 0;
 }
 
-/* Resume Items */
 .resume-item {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 25px;
 }
 
@@ -329,18 +248,14 @@ footer .copyright {
 }
 
 .resume-item .details h3 {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 18px;
-  font-weight: bold;
 }
 
-.resume-item p {
-  color: #444;
-}
-
-/* Resume Page Padding Fix */
-.resume-page {
-  padding-top: 20px;
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
 }
 
 
@@ -350,12 +265,14 @@ footer .copyright {
 .contact-form {
   width: 60%;
   margin: auto;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 }
 
 .contact-form label {
-  margin-top: 15px;
+  margin-top: 12px;
   font-weight: bold;
 }
 
@@ -371,11 +288,101 @@ footer .copyright {
 .contact-form button {
   margin-top: 20px;
   padding: 12px;
-  border: none;
   color: white;
   background: #4ec7c7;
+  border: none;
   border-radius: 6px;
   font-size: 17px;
   cursor: pointer;
 }
 
+
+/* ----------------------------------------------------
+   ANIMATIONS
+---------------------------------------------------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ----------------------------------------------------
+   RESPONSIVE SCREENS
+---------------------------------------------------- */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .resume-item {
+    flex-direction: column;
+  }
+
+  .resume-item .date {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
