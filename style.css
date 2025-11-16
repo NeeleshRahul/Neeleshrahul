@@ -74,14 +74,37 @@ nav a.active {
   color: #ff3b30;
   font-weight: bold;
 } */
- nav a:hover {
+ /* nav a:hover {
   color: #ff3b30 !important;
 }
 
 nav a.active {
   color: #ff3b30 !important;
   font-weight: bold;
+} */
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 18px; /* space between items */
 }
+
+nav a {
+  text-decoration: none !important;
+  color: #111 !important;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Add vertical bar between items */
+nav a:not(:last-child)::after {
+  content: "|";
+  margin-left: 18px;
+  color: #ccc;       /* light grey divider */
+  font-weight: normal;
+}
+
 @media (max-width: 480px) {
   header {
     padding: 12px 20px;
