@@ -288,6 +288,60 @@ footer .copyright {
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
+/* Remove underline from header name */
+.no-underline {
+  text-decoration: none !important;
+}
+
+/* Resume Header */
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.download-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+}
+
+/* Divider line */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  margin: 25px 0;
+}
+
+/* Resume Items */
+.resume-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.resume-item .date {
+  width: 25%;
+  color: #666;
+  font-weight: 600;
+}
+
+.resume-item .details h3 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.resume-item p {
+  color: #444;
+}
+
+/* Resume Page Padding Fix */
+.resume-page {
+  padding-top: 20px;
+}
 
 
 /* ----------------------------------------------------
