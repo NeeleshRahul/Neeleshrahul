@@ -150,10 +150,12 @@ nav a.active {
 }
 
 .page-container {
-  width: 90%;
+  width: 90% !important;
   max-width: 1100px;
-  margin: auto;
-  padding-top: 40px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 40px 0 !important;
+  display: block;
 }
 
 
@@ -246,11 +248,18 @@ footer .copyright {
 /* ----------------------------------------------------
    RESUME PAGE
 ---------------------------------------------------- */
-.resume-page {
+/* .resume-page {
   width: 75%;
   margin: auto;
   padding: 40px 0;
+} */
+ .resume-page {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: auto;
+  padding-top: 20px;
 }
+
 
 .resume-header {
   display: flex;
