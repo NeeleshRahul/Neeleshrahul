@@ -61,29 +61,31 @@ header a:focus {
 .no-underline {
   text-decoration: none !important;
 }
-
-
 nav {
   display: flex;
   align-items: center;
-  gap: 18px; /* space between items */
+  gap: 25px; /* spacing between links */
 }
 
 nav a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: #111 !important;
   font-size: 15px;
   font-weight: 500;
   position: relative;
+  padding-right: 20px; /* space for divider */
 }
 
-/* Add vertical bar between items */
+/* Add | divider between nav items */
 nav a:not(:last-child)::after {
   content: "|";
-  margin-left: 18px;
-  color: #ccc;       /* light grey divider */
-  font-weight: normal;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #bbb;
+  font-weight: 300;
 }
+
 
 @media (max-width: 480px) {
   header {
